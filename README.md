@@ -1,5 +1,7 @@
 # Next-Gen AI Platform Speed Run
 
+🚀 **Live Deployment:** [https://frontend-six-sigma-50.vercel.app/](https://frontend-six-sigma-50.vercel.app/)
+
 A premium, high-converting, responsive landing page for an advanced AI-driven data automation platform. This project was developed as a submission for the FRONT-END-BATTLE.
 
 ## Features
