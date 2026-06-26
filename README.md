@@ -16,16 +16,7 @@ A premium, high-converting, responsive landing page for an advanced AI-driven da
 - **CSS3:** Custom utility design using exact brand guidelines (JetBrains Mono & Inter fonts, bespoke color palette)
 - **Vanilla JavaScript:** Zero-dependency logic for state handling and DOM isolation
 
-## Local Development
 
-To run the project locally, you can use the included PowerShell script:
-
-1. Clone the repository
-2. Run the server script:
-   ```bash
-   powershell -ExecutionPolicy Bypass -File .\server.ps1
-   ```
-3. Open `http://localhost:8081/` in your browser.
 
 ## Disclaimer
 This project adheres to all constraints specified in the "Phase 1 Official Problem Statement" (no external animation libraries used for core features, isolated renders, <500ms initial sequence cap).
