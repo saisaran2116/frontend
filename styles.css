@@ -297,13 +297,13 @@ a { color: inherit; text-decoration: none; }
 .features-list {
     list-style: none;
     padding: 0;
-    margin: 0 0 2rem 0;
-    width: 100%;
+    margin: 0 auto 2rem auto;
+    width: fit-content;
 }
 
 .features-list li {
     margin-bottom: 0.8rem;
-    text-align: center;
+    text-align: left;
 }
 
 .features-list li::before {
