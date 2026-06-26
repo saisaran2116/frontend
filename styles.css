@@ -323,6 +323,10 @@ a { color: inherit; text-decoration: none; }
 
 /* Mobile Responsive */
 @media (max-width: 992px) {
+    .nav-links { display: none !important; }
+    .features, .pricing { padding: 50px 1.5rem !important; }
+    .icosahedron-container { transform: scale(0.7); margin-top: 2rem !important; }
+    
     .pricing-matrix { grid-template-columns: 1fr; }
     .features-wrapper { grid-template-columns: 1fr; }
     .feature-item:nth-child(n) { grid-column: span 1; }
