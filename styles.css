@@ -29,7 +29,7 @@ a { color: inherit; text-decoration: none; }
 /* Buttons & Interactive Elements */
 .btn-glow {
     background: var(--accent);
-    color: var(--bg);
+    color: #000000;
     border: none;
     padding: 0.8rem 2rem;
     font-family: 'JetBrains Mono', monospace;
@@ -275,7 +275,7 @@ a { color: inherit; text-decoration: none; }
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .pricing-card:hover {
@@ -293,6 +293,8 @@ a { color: inherit; text-decoration: none; }
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
 }
 
 .price {
@@ -307,16 +309,17 @@ a { color: inherit; text-decoration: none; }
 }
 
 .pricing-card p {
-    text-align: center;
+    text-align: left;
     color: rgba(242, 243, 244, 0.7);
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .features-list {
     list-style: none;
     padding: 0;
-    margin: 0 auto 2rem auto;
-    width: fit-content;
+    margin: 0 0 2rem 0;
+    width: 100%;
 }
 
 .features-list li {

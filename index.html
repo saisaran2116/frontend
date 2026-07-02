@@ -86,7 +86,6 @@
             <ul class="nav-links" style="display: flex; list-style: none; gap: 2.5rem; margin: 0; padding: 0;">
                 <li><a href="#features" style="text-decoration: none; color: var(--text); font-size: 0.9rem; font-weight: 500; transition: color 150ms;">Features</a></li>
                 <li><a href="#pricing" style="text-decoration: none; color: var(--text); font-size: 0.9rem; font-weight: 500; transition: color 150ms;">Pricing</a></li>
-                <li><a href="#docs" style="text-decoration: none; color: var(--text); font-size: 0.9rem; font-weight: 500; transition: color 150ms;">Docs</a></li>
             </ul>
             <button class="cta-nav" style="background: transparent; border: 1px solid var(--accent); color: var(--accent); padding: 0.6rem 1.2rem; font-family: 'JetBrains Mono', monospace; font-weight: 500; cursor: pointer; transition: all 150ms;">Launch App</button>
         </nav>
@@ -116,11 +115,12 @@
             </div>
         </section>
 
-        <section class="features" id="features" style="padding: 100px 2rem; max-width: 1200px; margin: 0 auto;">
-            <div class="section-header" style="margin-bottom: 4rem;">
-                <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 2.5rem; letter-spacing: -1px;">Engineered for Performance</h2>
-            </div>
-            <div class="features-wrapper" id="feature-container">
+        <section class="features" id="features" style="padding: 120px 2rem;">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <div class="section-header" style="margin-bottom: 4rem;">
+                    <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 2.5rem; letter-spacing: -1px; text-align: center;">Engineered for Performance</h2>
+                </div>
+                <div class="features-wrapper" id="feature-container">
                 <div class="feature-item" data-index="0">
                     <div class="feature-header"><div class="icon" style="-webkit-mask-image: url('assets/cog-8-tooth.svg'); mask-image: url('assets/cog-8-tooth.svg');"></div>Terminal Engine</div>
                     <div class="feature-body">Direct silicon access for raw throughput and deterministic latency.</div>
@@ -145,12 +145,13 @@
                     <div class="feature-header"><div class="icon" style="-webkit-mask-image: url('assets/chart-pie.svg'); mask-image: url('assets/chart-pie.svg');"></div>Live Stream</div>
                     <div class="feature-body">Real-time visualization of the AI processing pipeline.</div>
                 </div>
+                </div>
             </div>
         </section>
 
-        <section class="pricing" id="pricing" style="padding: 100px 2rem; background: rgba(22, 22, 107, 0.1);">
-            <div class="pricing-container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
-                <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 2.5rem; margin-bottom: 3rem;">Pricing Matrix</h2>
+        <section class="pricing" id="pricing" style="padding: 120px 2rem; background: rgba(22, 22, 107, 0.1);">
+            <div class="pricing-container" style="max-width: 1200px; margin: 0 auto;">
+                <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 2.5rem; margin-bottom: 3rem; text-align: center;">Pricing Matrix</h2>
                 
                 <div class="pricing-controls" style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 4rem; flex-wrap: wrap;">
                     <div class="toggle-container">
@@ -205,38 +206,6 @@
                         </ul>
                         <button class="btn-card" style="display:flex; align-items:center; justify-content:center; gap:0.5rem;">Contact Sales <div class="icon" style="-webkit-mask-image: url('assets/link.svg'); mask-image: url('assets/link.svg'); width: 18px; height: 18px;"></div></button>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="docs" id="docs" style="padding: 100px 2rem; background: var(--bg);">
-            <div class="docs-container" style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
-                <div class="docs-header" style="text-align: center;">
-                    <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 2.5rem; margin-bottom: 1rem;">Developer Docs</h2>
-                    <p style="color: rgba(242, 243, 244, 0.7); max-width: 600px; margin: 0 auto;">Integrate the AI.GEN engine into your application in under 3 minutes.</p>
-                </div>
-                
-                <div class="code-block" style="background: rgba(22, 22, 107, 0.3); border: 1px solid rgba(15, 255, 255, 0.2); border-radius: 8px; padding: 2.5rem 2rem 2rem 2rem; position: relative; overflow-x: auto; max-width: 700px; margin: 0 auto; width: 100%;">
-                    <div style="position: absolute; top: 1rem; left: 1rem; display: flex; gap: 0.5rem;">
-                        <div style="width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></div>
-                        <div style="width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></div>
-                        <div style="width: 12px; height: 12px; border-radius: 50%; background: #27c93f;"></div>
-                    </div>
-                    <pre style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; color: var(--text); line-height: 1.6;"><code><span style="color: #c678dd;">import</span> { AIGenClient } <span style="color: #c678dd;">from</span> <span style="color: #98c379;">'@aigen/sdk'</span>;
-
-<span style="color: #5c6370;">// Initialize the high-performance client</span>
-<span style="color: #c678dd;">const</span> client = <span style="color: #e5c07b;">new</span> <span style="color: #61afef;">AIGenClient</span>({
-  apiKey: process.env.<span style="color: #d19a66;">AIGEN_API_KEY</span>,
-  latencyMode: <span style="color: #98c379;">'ultra-low'</span>
-});
-
-<span style="color: #5c6370;">// Execute matrix transformation</span>
-<span style="color: #c678dd;">const</span> response = <span style="color: #c678dd;">await</span> client.inference.<span style="color: #61afef;">execute</span>({
-  model: <span style="color: #98c379;">'neural-fabric-v2'</span>,
-  payload: dataSyncStream
-});
-
-console.<span style="color: #56b6c2;">log</span>(response.throughput);</code></pre>
                 </div>
             </div>
         </section>
